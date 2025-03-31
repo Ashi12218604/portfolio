@@ -16,7 +16,7 @@ const Hero = () => {
             <Button asChild className="bg-white text-indigo-900 hover:bg-gray-100">
               <Link to="/contact">Contact Me <ChevronRight size={16} className="ml-1" /></Link>
             </Button>
-            <a href="/8791379845_ashi_12218604.pdf" download className="inline-flex items-center px-4 py-2 border border-white text-white rounded-lg hover:bg-white/10">
+            <a href="/8791379845_ashi_12218604.pdf" download className="inline-flex items-center px-4 py-2 border border-white text-white bg-white/20 hover:bg-white/30 rounded-lg">
               <Download size={16} className="mr-2" /> Download CV
             </a>
           </div>
