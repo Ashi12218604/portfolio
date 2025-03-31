@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ChevronRight, Download } from "lucide-react";
@@ -17,12 +16,9 @@ const Hero = () => {
             <Button asChild className="bg-white text-indigo-900 hover:bg-gray-100">
               <Link to="/contact">Contact Me <ChevronRight size={16} className="ml-1" /></Link>
             </Button>
-            <Button variant="outline" className="text-white border-white hover:bg-white/10">
-              <a href="/Ashi_Gupta_Resume.pdf" download className="inline-flex items-center px-4 py-2 border border-white text-white rounded-lg hover:bg-white/10">
-  <Download size={16} className="mr-2" /> Download CV
-</a>
-
-            </Button>
+            <a href="/8791379845_ashi_12218604.pdf" download className="inline-flex items-center px-4 py-2 border border-white text-white rounded-lg hover:bg-white/10">
+              <Download size={16} className="mr-2" /> Download CV
+            </a>
           </div>
         </div>
         <div className="md:w-2/5 flex justify-center">
