@@ -23,7 +23,7 @@ const projects = [
     title: "Weather App",
     description: "Built a GUI-based weather app in Python using various APIs for real-time weather updates.",
     date: "2024-09-05",
-    image: "/weather-app.avif",
+    image: "/weather app.avif",
   },
   {
     title: "Navy Analysis and Route Optimization",
