@@ -2,7 +2,7 @@
 import Hero from "@/components/Hero";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Activity, Book, BriefcaseBusiness, Certificate, ChevronRight } from "lucide-react";
+import { Activity, Book, BriefcaseBusiness, Award, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -54,7 +54,7 @@ const Home = () => {
             <Card className="hover:shadow-lg transition-all">
               <CardHeader className="flex flex-col items-center">
                 <div className="p-3 bg-indigo-100 rounded-full mb-4">
-                  <Certificate size={24} className="text-indigo-600" />
+                  <Award size={24} className="text-indigo-600" />
                 </div>
                 <CardTitle className="text-center">Development</CardTitle>
               </CardHeader>
