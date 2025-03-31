@@ -3,106 +3,117 @@ import { Calendar } from "lucide-react";
 
 interface Project {
   title: string;
-  image: string;
   description: string;
   results: string[];
   technologies: string[];
   date: string;
+  image: string;  // Image path
 }
 
 const projects: Project[] = [
   {
     title: "MNIST Digital Classifier",
-    image: "/mnist.avif",
-    description: "Implemented a digit classifier using Logistic Regression and CNN achieving 98% accuracy.",
+    description: "A machine learning project for handwritten digit classification using CNN and Logistic Regression.",
     results: [
-      "Achieved 98% accuracy on the MNIST dataset.",
-      "Compared Logistic Regression with CNN performance.",
-      "Visualized predictions with Matplotlib."
+      "Achieved 98% accuracy on test data",
+      "Implemented in Python using TensorFlow",
+      "Trained on the MNIST dataset"
     ],
-    technologies: ["Python", "TensorFlow", "NumPy", "Matplotlib"],
-    date: "2024-06-20"
+    technologies: ["Python", "TensorFlow", "CNN", "Logistic Regression"],
+    date: "2024-06-15",
+    image: "/mnist.avif"
   },
   {
     title: "Polynomial Evaluator",
-    image: "/polynomial.jpg",
-    description: "Designed a Java-based polynomial evaluator using LinkedList to perform polynomial operations.",
+    description: "A Java project to evaluate polynomial expressions efficiently using linked lists.",
     results: [
-      "Implemented addition, subtraction, and multiplication of polynomials.",
-      "Used LinkedList for efficient storage and retrieval.",
-      "Optimized for large polynomial calculations."
+      "Supports addition, subtraction, and multiplication of polynomials",
+      "Implemented linked list-based polynomial storage",
+      "Optimized for performance"
     ],
-    technologies: ["Java", "LinkedList", "OOP"],
-    date: "2024-07-15"
+    technologies: ["Java", "Linked List", "Data Structures"],
+    date: "2024-07-01",
+    image: "/polynomial.jpg"
   },
   {
     title: "EDA on Weather Analysis",
-    image: "/weather analysis.png",
-    description: "Performed Exploratory Data Analysis (EDA) on weather data to uncover trends and insights.",
+    description: "An exploratory data analysis project focused on weather trends and patterns.",
     results: [
-      "Created visualizations like histograms, scatter plots, and correlation matrices.",
-      "Analyzed temperature, humidity, and precipitation trends.",
-      "Used Python libraries for data processing and visualization."
+      "Visualized correlation between temperature, humidity, and precipitation",
+      "Generated heatmaps and scatter plots",
+      "Analyzed yearly weather fluctuations"
     ],
     technologies: ["Python", "Pandas", "Matplotlib", "Seaborn"],
-    date: "2024-08-10"
+    date: "2024-08-10",
+    image: "/weather-analysis.png"
   },
   {
     title: "Weather App",
-    image: "/weather app.avif",
-    description: "Developed a GUI-based weather application using Python to display real-time weather updates.",
+    description: "A GUI-based weather application providing real-time weather updates.",
     results: [
-      "Fetched real-time weather data via API.",
-      "Displayed weather conditions with a user-friendly UI.",
-      "Used Tkinter for GUI development."
+      "Fetches real-time weather data via API",
+      "User-friendly graphical interface",
+      "Displays temperature, humidity, and weather conditions"
     ],
     technologies: ["Python", "Tkinter", "API Integration"],
-    date: "2024-09-05"
+    date: "2024-08-25",
+    image: "/weather-app.avif"
   },
   {
-    title: "Navy Analysis & Route Optimization",
-    image: "/navy.png",
-    description: "Analyzed maritime data and optimized naval routes using graph-based techniques.",
+    title: "Navy Analysis and Route Optimization",
+    description: "A data analysis project for optimizing maritime navigation routes.",
     results: [
-      "Collected real-world maritime data via web scraping.",
-      "Used graph algorithms for optimal route calculation.",
-      "Minimized travel time and fuel consumption."
+      "Implemented shortest path algorithms for route optimization",
+      "Analyzed naval traffic and congestion",
+      "Enhanced efficiency in maritime operations"
     ],
-    technologies: ["Python", "Graph Algorithms", "Web Scraping"],
-    date: "2025-03-01"
+    technologies: ["Python", "Graph Algorithms", "Data Analysis"],
+    date: "2024-09-05",
+    image: "/navy.png"
   }
 ];
 
-const ProjectCard = () => {
+const ProjectCard = ({ title, description, results, technologies, date, image }: Project) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {projects.map((project, index) => (
-        <div key={index} className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-          <img src={project.image} alt={project.title} className="w-full h-40 object-cover rounded-md mb-4" />
-          <div className="flex justify-between items-start mb-4">
-            <h3 className="text-xl font-bold text-indigo-900">{project.title}</h3>
-            <div className="flex items-center text-sm text-gray-600">
-              <Calendar size={16} className="mr-1" />
-              <span>{project.date}</span>
-            </div>
-          </div>
-          <p className="text-gray-700 mb-4">{project.description}</p>
-          <ul className="list-disc list-inside mb-4 text-gray-700">
-            {project.results.map((result, i) => (
-              <li key={i}>{result}</li>
-            ))}
-          </ul>
-          <div className="flex flex-wrap gap-2 mt-4">
-            {project.technologies.map((tech, i) => (
-              <Badge key={i} variant="outline" className="bg-indigo-100 text-indigo-800 border-indigo-200">
-                {tech}
-              </Badge>
-            ))}
-          </div>
+    <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+      <img src={image} alt={title} className="w-full h-48 object-cover rounded-md mb-4" />
+      <div className="flex justify-between items-start mb-4">
+        <h3 className="text-xl font-bold text-indigo-900">{title}</h3>
+        <div className="flex items-center text-sm text-gray-600">
+          <Calendar size={16} className="mr-1" />
+          <span>{date}</span>
         </div>
-      ))}
+      </div>
+      <p className="text-gray-700 mb-4">{description}</p>
+      <ul className="list-disc list-inside mb-4 text-gray-700">
+        {results.map((result, index) => (
+          <li key={index}>{result}</li>
+        ))}
+      </ul>
+      <div className="flex flex-wrap gap-2 mt-4">
+        {technologies.map((tech, index) => (
+          <Badge key={index} variant="outline" className="bg-indigo-100 text-indigo-800 border-indigo-200">
+            {tech}
+          </Badge>
+        ))}
+      </div>
     </div>
   );
 };
 
-export default ProjectCard;
+const Projects = () => {
+  console.log("Projects component rendered!");  // Debugging to check re-renders
+
+  return (
+    <div className="container mx-auto px-6 py-12">
+      <h2 className="text-3xl font-bold text-indigo-900 mb-6">Projects</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {projects.map((project, index) => (
+          <ProjectCard key={index} {...project} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Projects;
