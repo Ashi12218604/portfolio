@@ -17,7 +17,7 @@ const projects = [
     title: "EDA on Weather Analysis",
     description: "Performed Exploratory Data Analysis (EDA) on weather data to derive meaningful insights.",
     date: "2024-08-10",
-    image: "/weather-analysis.png",
+    image: "/weather analysis.png",
   },
   {
     title: "Weather App",
