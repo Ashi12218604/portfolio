@@ -18,7 +18,7 @@ const Footer = () => {
               <Phone size={18} className="mr-2" /> +91-8791379845
             </a>
             <a href="https://www.linkedin.com/in/ashi-gupta-4895a0250/" className="flex items-center hover:text-indigo-200 transition-colors" target="_blank" rel="noopener noreferrer">
-              <Linkedin size={18} className="mr-2" /> ashi-gupta-4895a0250
+              <Linkedin size={18} className="mr-2" /> https://www.linkedin.com/in/ashi-gupta-4895a0250/
             </a>
             <a href="https://github.com/Ashi12218604" className="flex items-center hover:text-indigo-200 transition-colors" target="_blank" rel="noopener noreferrer">
               <Github size={18} className="mr-2" /> Ashi12218604
