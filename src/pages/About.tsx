@@ -119,11 +119,11 @@ const About = () => {
               <div className="space-y-4 text-gray-700">
                 <p className="flex items-center">
                   <span className="font-semibold mr-2">Email:</span>
-                  <a href="mailto:agupta8555@gmail.com" className="text-indigo-600 hover:underline">agupta8555@gmail.com</a>
+                  <a href="mailto:guptaashi655@gmail.com" className="text-indigo-600 hover:underline">guptaashi655@gmail.com</a>
                 </p>
                 <p className="flex items-center">
                   <span className="font-semibold mr-2">Phone:</span>
-                  <a href="tel:+919879379845" className="text-indigo-600 hover:underline">+91-9879379845</a>
+                  <a href="tel:+918791379845" className="text-indigo-600 hover:underline">+91-8791379845</a>
                 </p>
                 <p className="flex items-center">
                   <span className="font-semibold mr-2">LinkedIn:</span>

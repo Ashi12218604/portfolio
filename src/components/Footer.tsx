@@ -12,11 +12,11 @@ const Footer = () => {
           </div>
           
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 items-center">
-            <a href="mailto:agupta8555@gmail.com" className="flex items-center hover:text-indigo-200 transition-colors">
-              <Mail size={18} className="mr-2" /> agupta8555@gmail.com
+            <a href="mailto:guptaashi655@gmail.com" className="flex items-center hover:text-indigo-200 transition-colors">
+              <Mail size={18} className="mr-2" /> guptaashi655@gmail.com
             </a>
-            <a href="tel:+919879379845" className="flex items-center hover:text-indigo-200 transition-colors">
-              <Phone size={18} className="mr-2" /> +91-9879379845
+            <a href="tel:+918791379845" className="flex items-center hover:text-indigo-200 transition-colors">
+              <Phone size={18} className="mr-2" /> +91-8791379845
             </a>
             <a href="https://www.linkedin.com/in/ashi-gupta-48590a9/" className="flex items-center hover:text-indigo-200 transition-colors" target="_blank" rel="noopener noreferrer">
               <Linkedin size={18} className="mr-2" /> ashi-gupta-48590a9

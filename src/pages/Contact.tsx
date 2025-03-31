@@ -120,7 +120,7 @@ const Contact = () => {
                     <Mail className="text-indigo-600 mr-4" size={20} />
                     <div>
                       <h3 className="font-medium text-gray-800">Email</h3>
-                      <a href="mailto:agupta8555@gmail.com" className="text-indigo-600 hover:underline">agupta8555@gmail.com</a>
+                      <a href="mailto:guptaashi655@gmail.com" className="text-indigo-600 hover:underline">guptaashi655@gmail.com</a>
                     </div>
                   </div>
                   
@@ -128,7 +128,7 @@ const Contact = () => {
                     <Phone className="text-indigo-600 mr-4" size={20} />
                     <div>
                       <h3 className="font-medium text-gray-800">Phone</h3>
-                      <a href="tel:+919879379845" className="text-indigo-600 hover:underline">+91-9879379845</a>
+                      <a href="tel:+918791379845" className="text-indigo-600 hover:underline">+91-8791379845</a>
                     </div>
                   </div>
                   
