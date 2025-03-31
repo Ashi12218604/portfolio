@@ -1,4 +1,3 @@
-
 import { Mail, Linkedin, Github, Phone } from "lucide-react";
 
 const Footer = () => {
@@ -18,11 +17,11 @@ const Footer = () => {
             <a href="tel:+918791379845" className="flex items-center hover:text-indigo-200 transition-colors">
               <Phone size={18} className="mr-2" /> +91-8791379845
             </a>
-            <a href="https://www.linkedin.com/in/ashi-gupta-48590a9/" className="flex items-center hover:text-indigo-200 transition-colors" target="_blank" rel="noopener noreferrer">
-              <Linkedin size={18} className="mr-2" /> ashi-gupta-48590a9
+            <a href="https://www.linkedin.com/in/ashi-gupta-4895a0250/" className="flex items-center hover:text-indigo-200 transition-colors" target="_blank" rel="noopener noreferrer">
+              <Linkedin size={18} className="mr-2" /> ashi-gupta-4895a0250
             </a>
-            <a href="https://github.com/Ashi12218694" className="flex items-center hover:text-indigo-200 transition-colors" target="_blank" rel="noopener noreferrer">
-              <Github size={18} className="mr-2" /> Ashi12218694
+            <a href="https://github.com/Ashi12218604" className="flex items-center hover:text-indigo-200 transition-colors" target="_blank" rel="noopener noreferrer">
+              <Github size={18} className="mr-2" /> Ashi12218604
             </a>
           </div>
         </div>
