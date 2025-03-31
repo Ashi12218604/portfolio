@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 mb-10 md:mb-0">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Ashi Gupta</h1>
-          <h2 className="text-2xl md:text-3xl text-indigo-200 mb-6">Data Scientist & Developer</h2>
+          <h2 className="text-2xl md:text-3xl text-indigo-200 mb-6">Data Scientist & ML Engineer</h2>
           <p className="text-lg mb-8 text-gray-200 max-w-md">
             Specializing in data analysis, visualization, and machine learning with a passion for creating efficient, data-driven solutions.
           </p>
