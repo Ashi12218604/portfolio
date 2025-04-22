@@ -1,34 +1,39 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Calendar, ExternalLink } from "lucide-react";
+import React from 'react';
 
-interface CertificationCardProps {
-  title: string;
-  provider: string;
-  date: string;
-  link: string;
-}
+// Define certificate data
+const certificates = [
+  {
+    name: "SQL Certification",
+    url: "https://www.coursera.org/account/accomplishments/certificate/NIOODDFLNY6R"
+  },
+  {
+    name: "Machine Learning Certification",
+    url: "https://www.coursera.org/account/accomplishments/certificate/MA1QKY6HSBP4"
+  },
+  {
+    name: "Renaissance Data Structures & Algorithms",
+    url: "https://certificates.programmingpathshala.com/v1/doc?id=f23d75d9f375fda86b5cd25218da51d48828fe5d018d18ecf24c6c9712d823a1"
+  },
+  {
+    name: "MongoDB Certification",
+    url: "https://learn.mongodb.com/c/hUUsZcLxQdO1uu6yPIa8UQ"
+  }
+];
 
-const CertificationCard = ({ title, provider, date, link }: CertificationCardProps) => {
+const CertificationCard: React.FC = () => {
   return (
-    <a href={link} target="_blank" rel="noopener noreferrer" className="block">
-      <Card className="hover:shadow-lg hover:scale-[1.01] transition-transform duration-200">
-        <CardHeader className="bg-gradient-to-r from-indigo-50 to-purple-50 pb-2">
-          <CardTitle className="text-lg font-bold text-indigo-900 flex items-center justify-between">
-            {title}
-            <ExternalLink size={16} className="text-indigo-600" />
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="pt-4">
-          <div className="flex justify-between items-center">
-            <span className="text-gray-700">{provider}</span>
-            <div className="flex items-center text-sm text-gray-600">
-              <Calendar size={16} className="mr-1" />
-              <span>{date}</span>
+    <div className="certification-card-container">
+      {certificates.map((cert, index) => (
+        <div className="certification-card" key={index}>
+          <a href={cert.url} target="_blank" rel="noopener noreferrer">
+            <div className="certification-card-content">
+              <h3>{cert.name}</h3>
+              <p>Click here to view your certificate</p>
             </div>
-          </div>
-        </CardContent>
-      </Card>
-    </a>
+          </a>
+        </div>
+      ))}
+    </div>
   );
 };
 
