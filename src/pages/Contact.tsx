@@ -144,7 +144,7 @@ const Contact = () => {
                     <Github className="text-indigo-600 mr-4" size={20} />
                     <div>
                       <h3 className="font-medium text-gray-800">GitHub</h3>
-                      <a href="https://github.com/Ashi12218604" className="text-indigo-600 hover:underline" target="_blank" rel="noopener noreferrer">Ashi12218694</a>
+                      <a href="https://github.com/Ashi12218604" className="text-indigo-600 hover:underline" target="_blank" rel="noopener noreferrer">Ashi12218604</a>
                     </div>
                   </div>
                 </div>
